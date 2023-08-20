@@ -1,8 +1,9 @@
 import './App.css';
 
-import {Header} from "header";
+import {Header} from "components/header";
 import React from "react";
 import {BrowserRouter} from "react-router-dom";
+import {Main} from "components/main/Main";
 
 
 export function App() {
@@ -12,7 +13,7 @@ export function App() {
                 <div className='container'>
                     <Header/>
                     <div style={{position: "relative"}}>
-
+                        <Main/>
                     </div>
                 </div>
             </div>
