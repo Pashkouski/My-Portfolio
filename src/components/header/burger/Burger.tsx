@@ -29,34 +29,40 @@ export const Burger = () => {
 
 const StyledBurgerWrapper = styled.div`
   display: none;
+  position: absolute;
+
+  justify-content: center;
+  align-items: center;
   @media (max-width: 717px) {
-    display: block;
-    background-color: black;
+    display: flex;
+    background-color: #0A101EFF;
+    height: 100vh;
+    width: 100vh;
   }
 `
 
 const NavbarContainer = styled.div`
   position: absolute;
-  @media (min-width > 717px) {
-    position: absolute;
+  background-color: #0A101EFF;
+  height: 100vh;
 
-    right: -50px;
-  }
   @media (max-width: 717px) {
-    position: absolute;
-    box-shadow: black;
-    top: 50px;
-    right: 50px;
-    width: 100px;
-    height: 100px;
+    position: relative;
+    text-align: center;
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    margin-left: 50%;
+    margin-right: auto;
   }
 `
 
 const StyledNavLink = styled(NavLink)`
   @media (max-width: 717px) {
+    position: relative;
+    top: 60%;
+    left: 70%;
+    transform: translate(-60%, -70%);
     padding: 15px 0;
     font-size: 15px;
     display: inline-block;
@@ -65,6 +71,10 @@ const StyledNavLink = styled(NavLink)`
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-decoration: none;
+  }
+  @media (max-width: 717px) {
+    
+    
   }
 
 `

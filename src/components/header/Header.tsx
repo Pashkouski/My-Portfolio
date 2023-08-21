@@ -9,13 +9,24 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Navbar/>
-            {active && <Burger/>}
-            <div>
-                <button onClick={() => setActive(!active)}> + </button>
-            </div>
+            {active && <Burger/>
+
+            }
+            <StyledButton>
+                <button onClick={() => setActive(!active)} style={{position: "absolute", zIndex: 1000}}> +</button>
+            </StyledButton>
+
         </StyledHeader>
     );
 };
+
+const StyledButton = styled.div`
+  > button {
+    position: absolute;
+    right: 5%;
+  }
+    
+`
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -27,10 +38,11 @@ const StyledHeader = styled.header`
   line-height: 1.6em;
   position: relative;
   z-index: 50;
+
   > div > button {
     display: none;
   }
-  
+
   @media (max-width > 717px) {
     > div > button {
       display: none;
