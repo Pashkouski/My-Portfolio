@@ -1,5 +1,5 @@
 import React from 'react';
-import {Skill} from "components/Skills/Skill/Skill";
+import {Skill} from "components/skills/skill/Skill";
 import styled from "styled-components";
 
 
@@ -31,8 +31,10 @@ const StyledSkillsContainer = styled.div`
   width: 90%;
   background-color: white;
   padding: 1rem;
-  > * h4 {
-    text-align: center;
+  > h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
     font-size: 1.5em;
   }

@@ -29,6 +29,9 @@ export const Navbar = () => {
 const NavbarWrapper = styled.div`
   margin-right: 5.85%;
 
+  @media (max-width: 717px) {
+      display: none;
+  }
   @media (max-width: 1076px) {
     .NavbarWrapper {
       width: 90%;

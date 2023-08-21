@@ -5,7 +5,10 @@ import React from "react";
 import {BrowserRouter} from "react-router-dom";
 import {Main} from "components/main/Main";
 import styled from "styled-components";
-import {Skills} from "components/Skills/Skills";
+import {Skills} from "components/skills/Skills";
+import {Works} from "components/works/Works";
+import {Footer} from "components/Footer/Footer";
+import {Contact} from "components/Contact/Contact";
 
 
 export function App() {
@@ -17,6 +20,9 @@ export function App() {
                     <StyledAppContainer>
                         <Main/>
                         <Skills/>
+                        <Works/>
+                        <Contact/>
+                        <Footer/>
                     </StyledAppContainer>
                 </StyledAppWrapper>
             </StyledApp>
