@@ -8,23 +8,19 @@ export const Contact = () => {
     return (
         <StyledOffersWrapper>
             <StyledOffersContainer>
-                <StyledInnerForm>
                     <h4>Lorem ipsum dolo omnis quam, repellat sint unde ut voluptatem!</h4>
-
                     <StyledInnerForm>
                         <input type="text" placeholder={'Ваше имя'}/>
                         <input type="email" placeholder={"Ваш адрес электронной почты"}/>
                         <textarea name="contact" placeholder={'Ваше сообщение'}></textarea>
                     </StyledInnerForm>
                     <button> Lorem psum </button>
-                </StyledInnerForm>
-
             </StyledOffersContainer>
         </StyledOffersWrapper>
     );
 };
 
-const StyledOffersWrapper = styled.div`
+const StyledOffersWrapper = styled.section`
   background-color: rgba(40, 44, 52);
   display: flex;
   justify-content: center;

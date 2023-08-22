@@ -14,12 +14,11 @@ export const Skills = () => {
                     <Skill/>
                 </StyledSkills>
             </StyledSkillsContainer>
-
         </StyledSkillsWrapper>
     )
 }
 
-const StyledSkillsWrapper = styled.div`
+const StyledSkillsWrapper = styled.section`
   position: relative;
   background-color: rgba(40, 44, 52);
   display: flex;

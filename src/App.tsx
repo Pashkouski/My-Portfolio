@@ -7,8 +7,8 @@ import {Main} from "components/main/Main";
 import styled from "styled-components";
 import {Skills} from "components/skills/Skills";
 import {Works} from "components/works/Works";
-import {Footer} from "components/Footer/Footer";
-import {Contact} from "components/Contact/Contact";
+import {Footer} from "components/footer/Footer";
+import {Contact} from "components/contact/Contact";
 
 
 export function App() {

@@ -13,7 +13,7 @@ export const Main = () => {
                     <p>Lorem ipsum.</p>
                 </StyledBlockContainer>
                 <StyledPhotosContainer>
-
+                    <img src="#" alt=""/>
                 </StyledPhotosContainer>
             </StyledMainContainer>
         </StyledMainWrapper>
@@ -31,7 +31,7 @@ const StyledMainWrapper = styled.main`
     flex-direction: column;
   }
 `
-const StyledMainContainer = styled.div`
+const StyledMainContainer = styled.section`
   position: relative;
   color: white;
   display: flex;
@@ -54,21 +54,21 @@ const StyledBlockContainer = styled.div`
   box-shadow: 0 0 10em rgb(86, 94, 119);
   padding: 0.2em;
 
-  > * p {
+  > p {
     @media (max-width: 1076px) {
       margin: 0.2em;
       padding: 0;
     }
   }
 
-  > * h2 {
+  > h2 {
     @media (max-width: 1076px) {
       margin: 0.2em;
       padding: 0;
     }
   }
 
-  > * span {
+  > span {
     @media (max-width: 1076px) {
       margin: 0.2em;
       padding: 0;

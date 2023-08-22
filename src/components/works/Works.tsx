@@ -17,7 +17,7 @@ export const Works = () => {
     )
 }
 
-const StyledWorksWrapper = styled.div`
+const StyledWorksWrapper = styled.section`
   background-color: rgba(40, 44, 52);
   display: flex;
   align-items: center;

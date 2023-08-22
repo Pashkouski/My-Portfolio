@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Navbar} from "components/navbar/Navbar";
+import {Navbar} from "components/header/navbar/Navbar";
 import styled from "styled-components";
 import {Burger} from "components/header/burger/Burger";
 
@@ -10,7 +10,6 @@ export const Header = () => {
         <StyledHeader>
             <Navbar/>
             {active && <Burger/>
-
             }
             <StyledButton>
                 <button onClick={() => setActive(!active)} style={{position: "absolute", zIndex: 1000}}> +</button>
@@ -20,7 +19,7 @@ export const Header = () => {
     );
 };
 
-const StyledButton = styled.div`
+const StyledButton = styled.button`
   > button {
     position: absolute;
     right: 5%;

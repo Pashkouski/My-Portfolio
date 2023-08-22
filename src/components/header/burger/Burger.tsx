@@ -27,7 +27,7 @@ export const Burger = () => {
     );
 };
 
-const StyledBurgerWrapper = styled.div`
+const StyledBurgerWrapper = styled.nav`
   display: none;
   position: absolute;
 
@@ -41,7 +41,7 @@ const StyledBurgerWrapper = styled.div`
   }
 `
 
-const NavbarContainer = styled.div`
+const NavbarContainer = styled.section`
   position: absolute;
   background-color: #0A101EFF;
   height: 100vh;

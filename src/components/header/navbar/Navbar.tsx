@@ -26,7 +26,7 @@ export const Navbar = () => {
     )
 }
 
-const NavbarWrapper = styled.div`
+const NavbarWrapper = styled.section`
   margin-right: 5.85%;
 
   @media (max-width: 717px) {
@@ -42,7 +42,7 @@ const NavbarWrapper = styled.div`
     }
   }
 `
-const NavbarContainer = styled.div`
+const NavbarContainer = styled.nav`
   width: 85%;
   align-items: center;
   display: flex;
