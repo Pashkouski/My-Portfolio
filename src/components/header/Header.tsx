@@ -12,19 +12,18 @@ export const Header = () => {
             {active && <Burger/>
             }
             <StyledButton>
-                <button onClick={() => setActive(!active)} style={{position: "absolute", zIndex: 1000}}> +</button>
+                <button onClick={() => setActive(!active)}> + </button>
             </StyledButton>
 
         </StyledHeader>
     );
 };
 
-const StyledButton = styled.button`
+const StyledButton = styled.div`
   > button {
     position: absolute;
     right: 5%;
   }
-    
 `
 
 const StyledHeader = styled.header`
