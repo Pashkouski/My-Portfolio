@@ -33,6 +33,11 @@ const StyledOffersContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 1rem;
+
+  @media (max-width: 728px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 const StyledInnerForm = styled.div`
 
@@ -56,14 +61,18 @@ const StyledInnerForm = styled.div`
     color: white;
     margin-top: 1.5rem;
   }
+
   > input, textarea {
     width: 60%;
+    min-width: 220px;
   }
-  @media (max-width: 567px) {
+
+
+/*  @media (max-width: 567px) {
     input, textarea {
       width: 80%;
     }
-  }
+  }*/
 `
 /*
 
